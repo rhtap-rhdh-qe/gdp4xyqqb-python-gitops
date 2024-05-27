@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: gdp4xyqqb-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/gdp4xyqqb-python-gitops

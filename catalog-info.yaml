@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gdp4xyqqb-python-gitops
+  description: This is GitOps manifest for gdp4xyqqb-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: gdp4xyqqb-python
+    janus-idp.io/tekton: gdp4xyqqb-python 
+    backstage.io/kubernetes-id: gdp4xyqqb-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:gdp4xyqqb-python
